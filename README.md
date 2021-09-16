@@ -44,10 +44,12 @@ QUPA2 – Quercus palustris (Pin oak)
 QUPA5 – Quercus pagoda (Cherrybark oak)
 
 Usage
+
 This tool is used like any other tool in ArcMap, however it currently cannot be found using the “Search” window. The location of the tool is found in the same way a shapefile or geodatabase is found—by navigating to it using the Catalog Pane within ArcMap. Double click on “TreeNameUpdate” (with the scroll icon) to open the tool’s window.
 Toolbox and script tool can be found here. See side menu help within the tool window and the descriptions below for additional information.
 
 Parameters (Tool User Inputs)
+
 Tree Dataset:
 The tree point dataset. This can be a feature layer that is dragged in from the table of contents, or a feature class (geodatabase or shapefile) from a file path.
 
@@ -68,6 +70,7 @@ Create New Output Field:
 This option adds a blank field and populates it with the results of the conversion. If the automatic option is chosen, the output field will be called "Acronym," "Scientific," or "Common," depending on the type of conversion that is taking place.
 
 Checking the Results Window for Missing Records
+
 Within ArcMap, click the “Geoprocessing” dropdown at the top of the window, then click “Results.” Within the Results pane, expand the most recent run of the TreeName tool, and then expand the Messages section.
 The tool will report on the provided inputs (fields added, type of conversion) and list records for which no match was found.
 Double clicking on the name of the tool towards the top of this window, “TreeNameUpdate,” will re-open the tool’s window with all of the previous inputs as they were.
