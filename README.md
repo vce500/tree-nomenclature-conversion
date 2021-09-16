@@ -1,7 +1,9 @@
 Tree Naming Convention Conversion Tool
+
 This tool converts between USDA acronyms, common names, and scientific names. Conversion can take place in any directions.
 As an example, a field containing the value “ACRU” can be converted to “Acer rubrum” and/or “Red maple.” This conversion can happen in any direction (e.g. “Red maple” can also be calculated back to “ACRU”).
 Copy field GPS point shapefiles into a working directory or a geodatabase. Do not the modify original GPS datasets.
+
 Notes
 1.	It does not matter what your input or output fields in the attribute table are called, but they must be of “Text” type.
 2.	If the “Create New Output” option is selected, a new field will be created in the attribute table. For example, if a series of acronyms needs to be converted to scientific names, the user can check this box and a “Scientific” field will be added and populated. If converting to common names, this option will add a “Common” field. If this option is checked, the  “Existing Output Field” option will be unavailable. Users cannot write to an existing field and add a new field during the same run of the tool.
@@ -13,6 +15,7 @@ Notes
 5.	If the user specifies a field to be overwritten, the tool will do this, just as Field Calculator would.
 6.	Please add additional species to the CRI spreadsheet here, as needed.
 •	"G:\Active\1 Forest Resources\Tree_GIS_Scripts\Tree_Name_Scripts\Script_Tree_List.csv"
+
 Troubleshooting
 1.	Refer to the Geoprocessing status window or Results pane for error messages. Common issues will be caught and reported (e.g. field already exists, .CSV file could not be found). See the section “Error Handling” below. Additional help can be found in the Help menu sidebar of the tool.
 2.	If the attribute table does not appear to populate, close it and re-open it, or remove the layer and re-add it to the map. Sometimes it just needs to refresh.
@@ -22,10 +25,8 @@ Troubleshooting
 •	Check the spelling of the inputs in the attribute table. Check the CSV as well—some USDA acronym names have been modified based on species that are most common in our work areas (see section below). If your inputs are scientific or common names, check that the same name and spelling is being used in the CSV.
 •	If the species does not exist in the CSV, add it in (and let Alison know) and run the tool again.
 •	A Genus sp. entry will not be found, so these entries must be edited into the attribute table manually.
-6.	Call Vince for additional help.
  
 List of Modified USDA Acronyms:
-
 ACSA
 ACSA2 – Acer saccharinum (Silver maple)
 ACSA3 – Acer saccharum (Sugar maple)
@@ -45,7 +46,6 @@ QUPA5 – Quercus pagoda (Cherrybark oak)
 Usage
 This tool is used like any other tool in ArcMap, however it currently cannot be found using the “Search” window. The location of the tool is found in the same way a shapefile or geodatabase is found—by navigating to it using the Catalog Pane within ArcMap. Double click on “TreeNameUpdate” (with the scroll icon) to open the tool’s window.
 Toolbox and script tool can be found here. See side menu help within the tool window and the descriptions below for additional information.
-G:\Active\1 Forest Resources\Tree_GIS_Scripts\Tree_Name_Scripts\Updated_Code_20200211\TreeScript_20200521.tbx
 
 Parameters (Tool User Inputs)
 Tree Dataset:
